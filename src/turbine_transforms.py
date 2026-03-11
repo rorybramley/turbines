@@ -98,5 +98,5 @@ def gold_anomalies_transform(silver_df: DataFrame, summary_df: DataFrame) -> Dat
             "stddev_power",
             "is_anomaly"
         )
-        .where(F.col("is_anomaly") == True)
+        .where(F.col("is_anomaly"))
     )
